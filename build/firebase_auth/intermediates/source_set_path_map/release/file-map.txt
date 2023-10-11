@@ -1,0 +1,17 @@
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-play-services-base-18.0.1-0 C:\Users\mange\.gradle\caches\transforms-3\015b170a6db1397e1872519ec11cf523\transformed\jetified-play-services-base-18.0.1\res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-play-services-basement-18.1.0-1 C:\Users\mange\.gradle\caches\transforms-3\4369bf1132c29aa9d354dab1b1bbc3be\transformed\jetified-play-services-basement-18.1.0\res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-window-1.0.0-beta04-2 C:\Users\mange\.gradle\caches\transforms-3\4c5faeb53c92b15d533c141c7e4bbad0\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-annotation-experimental-1.1.0-3 C:\Users\mange\.gradle\caches\transforms-3\5aad76c398ff2bc3bc8fa7a2ce218097\transformed\jetified-annotation-experimental-1.1.0\res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-window-java-1.0.0-beta04-4 C:\Users\mange\.gradle\caches\transforms-3\66e5e8b052269c425d02707ead145231\transformed\jetified-window-java-1.0.0-beta04\res
+io.flutter.plugins.firebase.auth.firebase_auth-core-1.6.0-5 C:\Users\mange\.gradle\caches\transforms-3\6f60de22802bf9a561b777eeb3cd5cb7\transformed\core-1.6.0\res
+io.flutter.plugins.firebase.auth.firebase_auth-browser-1.4.0-6 C:\Users\mange\.gradle\caches\transforms-3\864a36053a9d8d74b3264bfb1518c224\transformed\browser-1.4.0\res
+io.flutter.plugins.firebase.auth.firebase_auth-jetified-firebase-common-20.3.3-7 C:\Users\mange\.gradle\caches\transforms-3\d9460983b044c82bc54bdff41e2ed7d6\transformed\jetified-firebase-common-20.3.3\res
+io.flutter.plugins.firebase.auth.firebase_auth-pngs-8 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_auth\generated\res\pngs\release
+io.flutter.plugins.firebase.auth.firebase_auth-resValues-9 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_auth\generated\res\resValues\release
+io.flutter.plugins.firebase.auth.firebase_auth-rs-10 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_auth\generated\res\rs\release
+io.flutter.plugins.firebase.auth.firebase_auth-mergeReleaseResources-11 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_auth\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.firebase.auth.firebase_auth-mergeReleaseResources-12 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_auth\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.firebase.auth.firebase_auth-merged_res-13 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_auth\intermediates\merged_res\release
+io.flutter.plugins.firebase.auth.firebase_auth-packaged_res-14 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_core\intermediates\packaged_res\release
+io.flutter.plugins.firebase.auth.firebase_auth-main-15 C:\Users\mange\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-4.9.0\android\src\main\res
+io.flutter.plugins.firebase.auth.firebase_auth-release-16 C:\Users\mange\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-4.9.0\android\src\release\res

@@ -1,0 +1,14 @@
+io.flutter.plugins.firebase.core.firebase_core-jetified-play-services-basement-18.1.0-0 C:\Users\mange\.gradle\caches\transforms-3\4369bf1132c29aa9d354dab1b1bbc3be\transformed\jetified-play-services-basement-18.1.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-window-1.0.0-beta04-1 C:\Users\mange\.gradle\caches\transforms-3\4c5faeb53c92b15d533c141c7e4bbad0\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-annotation-experimental-1.1.0-2 C:\Users\mange\.gradle\caches\transforms-3\5aad76c398ff2bc3bc8fa7a2ce218097\transformed\jetified-annotation-experimental-1.1.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-window-java-1.0.0-beta04-3 C:\Users\mange\.gradle\caches\transforms-3\66e5e8b052269c425d02707ead145231\transformed\jetified-window-java-1.0.0-beta04\res
+io.flutter.plugins.firebase.core.firebase_core-core-1.6.0-4 C:\Users\mange\.gradle\caches\transforms-3\6f60de22802bf9a561b777eeb3cd5cb7\transformed\core-1.6.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-firebase-common-20.3.3-5 C:\Users\mange\.gradle\caches\transforms-3\d9460983b044c82bc54bdff41e2ed7d6\transformed\jetified-firebase-common-20.3.3\res
+io.flutter.plugins.firebase.core.firebase_core-pngs-6 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_core\generated\res\pngs\release
+io.flutter.plugins.firebase.core.firebase_core-resValues-7 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_core\generated\res\resValues\release
+io.flutter.plugins.firebase.core.firebase_core-rs-8 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_core\generated\res\rs\release
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-9 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_core\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-10 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_core\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.firebase.core.firebase_core-merged_res-11 C:\Users\mange\AndroidStudioProjects\bhart_political_reports\build\firebase_core\intermediates\merged_res\release
+io.flutter.plugins.firebase.core.firebase_core-main-12 C:\Users\mange\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-2.17.0\android\src\main\res
+io.flutter.plugins.firebase.core.firebase_core-release-13 C:\Users\mange\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-2.17.0\android\src\release\res

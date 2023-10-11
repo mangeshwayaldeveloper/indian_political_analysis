@@ -1,0 +1,4 @@
+#Sat Oct 07 23:52:10 IST 2023
+base.0=C\:\\Users\\mange\\AndroidStudioProjects\\bhart_political_reports\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
