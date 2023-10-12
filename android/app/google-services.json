@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "922577745755",
+    "project_id": "indian-political-analysis",
+    "storage_bucket": "indian-political-analysis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922577745755:android:3ca31403c2773d01c28c7e",
+        "android_client_info": {
+          "package_name": "com.alwaysbecreative.bpl.bhart_political_reports"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwIrFC4frY6IyQWqNvTTlkjBlkPKLfQ7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

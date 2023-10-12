@@ -1,0 +1,42 @@
+name: bhart_political_reports
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  lottie: ^2.4.0
+  http: ^1.0.0
+  line_awesome_flutter: ^2.0.0
+  google_fonts: ^5.1.0
+  flutter_svg: ^2.0.7
+  fl_chart: ^0.63.0
+  table_calendar: ^3.0.9
+  pinput: ^3.0.1
+  firebase_core: ^2.15.1
+  firebase_auth: ^4.9.0
+  flutter_gif: ^0.0.4
+  cloud_firestore: ^4.9.3
+  get: ^4.6.6
+  flutter_swiper_plus: ^2.0.4
+  flutter_lints: ^2.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - Assets/Images/svg/electricity.svg
+    - Assets/animation/
+    - Assets/Images/image/
+    -
