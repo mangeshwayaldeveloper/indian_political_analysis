@@ -4,3 +4,4 @@ class routes {
   static String splash = "/splashScreen";
   static String onBoardFirst = "/onBoardFirst";
 }
+

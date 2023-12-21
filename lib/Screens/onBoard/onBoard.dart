@@ -1,7 +1,7 @@
-import 'dart:ui';
-
 import 'package:bhart_political_reports/Screens/login.dart';
+import 'package:drop_shadow_image/drop_shadow_image.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class OnBoarding extends StatefulWidget {
   const OnBoarding({super.key});
@@ -62,27 +62,27 @@ class _OnBoardingState extends State<OnBoarding> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    ...List.generate(
-                        data.length,
-                        (index) => Padding(
-                              padding: EdgeInsets.only(right: 4),
-                              child: DotIndicator(
-                                isActive: index == _pageIndex,
-                              ),
-                            )),
-                    DotIndicator(),
+                    // ...List.generate(
+                    //     data.length,
+                    //     // (index) => Padding(
+                        //       padding: EdgeInsets.only(right: 4),
+                        //       child: DotIndicator(
+                        //         isActive: index == _pageIndex,
+                        //       ),
+                        //     )),
+                    // DotIndicator(),
                     SizedBox(
                       height: 10,
                     ),
                   ],
                 ),
                 SizedBox(
-                  height: 10,
-                ),
-                SizedBox(
-                    height: 60,
-                    width: MediaQuery.of(context).size.width / 1.3,
+                    height: 50,
+                    width: MediaQuery.of(context).size.width / 1.2,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color(0xd730ee18)
+                      ),
                         onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(
                               builder: (context) => LoginPage()));
@@ -92,7 +92,7 @@ class _OnBoardingState extends State<OnBoarding> {
                           style: TextStyle(fontSize: 22),
                         ))),
                 SizedBox(
-                  height: 15,
+                  height: 25,
                 )
               ],
             ),
@@ -118,11 +118,10 @@ class PageWithBackground extends StatelessWidget {
       children: [
         Opacity(
           opacity: 0.5,
-          child: Image.asset(
-            backgroundImage,
-            fit: BoxFit.cover,
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height,
+          child: DropShadowImage(
+            image: Image.asset(backgroundImage),
+            offset: Offset(10, 10),
+            // scale: 1.05,
           ),
         ),
         content,
@@ -131,26 +130,26 @@ class PageWithBackground extends StatelessWidget {
   }
 }
 
-class DotIndicator extends StatelessWidget {
-  const DotIndicator({
-    super.key,
-    this.isActive = false,
-  });
-
-  final bool isActive;
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: Duration(milliseconds: 300),
-      height: isActive ? 32 : 16,
-      width: 8,
-      decoration: BoxDecoration(
-          color: isActive ? Colors.blue : Colors.blue.withOpacity(0.4),
-          borderRadius: BorderRadius.all(Radius.circular(12))),
-    );
-  }
-}
+// class DotIndicator extends StatelessWidget {
+//   const DotIndicator({
+//     super.key,
+//     this.isActive = false,
+//   });
+//
+//   final bool isActive;
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return AnimatedContainer(
+//       duration: Duration(milliseconds: 300),
+//       height: isActive ? 32 : 16,
+//       width: 8,
+//       decoration: BoxDecoration(
+//           color: isActive ? Colors.blue : Colors.blue.withOpacity(0.4),
+//           borderRadius: BorderRadius.all(Radius.circular(12))),
+//     );
+//   }
+// }
 
 class Onboard {
   final String image, title, subtitle;
@@ -160,15 +159,11 @@ class Onboard {
 
 final List<Onboard> data = [
   Onboard(
-      image: "Assets/Images/image/farmers.jpg",
-      title: "Indian \nPolitical Report",
-      subtitle: "A platform for change"),
-  Onboard(
-      image: "Assets/Images/image/farmerpage.jpg",
-      title: "Indian \nPolitical Analysis",
-      subtitle: "A Platform For A Change")
+      image: "Assets/Images/image/ipa.jpg",
+      title: "INDIAN POLITICIAN\n ANALYSIS",
+      subtitle: "A Platform For Change\n\n\n\n Just \u{20B9}99 For 5 Years"),
 ];
-
+// \u{20B9}
 class onBoardContent extends StatelessWidget {
   const onBoardContent({
     super.key,
@@ -181,7 +176,7 @@ class onBoardContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double textHeight = MediaQuery.of(context).size.height / 1.5;
+    double textHeight = MediaQuery.of(context).size.height / 1.7;
     return Column(
       children: [
         SizedBox(
@@ -190,13 +185,16 @@ class onBoardContent extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-              fontSize: 34, fontWeight: FontWeight.bold, color: Colors.white),
+              fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white,fontFamily:'ArchivoBlack'),
           textAlign: TextAlign.center,
         ),
-        SizedBox(height: 10,),
+        SizedBox(
+          height: 10,
+        ),
         Text(
           subtitle,
-          style: TextStyle(color: Colors.white,fontSize: 18),
+          textAlign: TextAlign.center,
+          style: TextStyle(color: Colors.white, fontSize: 18),
         ),
         const Spacer(),
       ],

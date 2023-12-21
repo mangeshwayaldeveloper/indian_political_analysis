@@ -16,7 +16,7 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     controller = FlutterGifController(vsync: this);
-    Timer(Duration(milliseconds: 5080),
+    Timer(Duration(milliseconds: 1080),
         () => Navigator.pushReplacementNamed(context, '/onBoardFirst'));
   }
 
@@ -29,7 +29,9 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("Assets/Images/image/fingerprintFrontPage.jpg",height: 200,)
+              Image.asset("Assets/logo.jpg",height: 400,),
+              SizedBox(height: 20,),
+              Text("IPA",style:TextStyle(fontFamily: 'ArchivoBlack',fontWeight: FontWeight.bold,color: Colors.black,fontSize: 50),)
             ],
           ),
         ),

@@ -1,10 +1,12 @@
+import 'dart:async';
+
+import 'package:bhart_political_reports/Routes/Routes.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:pinput/pinput.dart';
-
-import 'Home/home.dart';
+import 'package:sms_autofill/sms_autofill.dart';
 
 class OtpVerification extends StatefulWidget {
   const OtpVerification({
@@ -21,23 +23,17 @@ class OtpVerification extends StatefulWidget {
 
 class _OtpVerificationState extends State<OtpVerification> {
   var otpController = TextEditingController();
-
-  @override
-  void initState() {
-    super.initState();
-    // Get the verification ID from the constructor.
-    final auth = widget.auth;
-    final verificationId = widget.verificationId;
-  }
-
+  String otp = '';
+  late StreamSubscription<String> otpStream;
+  bool isLoading = false;
   void signInWithPhoneAuthCredential(
       PhoneAuthCredential phoneAuthCredential) async {
     try {
       final authCredential =
       await widget.auth.signInWithCredential(phoneAuthCredential);
       if (authCredential.user != null) {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
+        Navigator.pushNamedAndRemoveUntil(
+            context,routes.homeRoute,(route)=>false);
       }
     } on FirebaseAuthException catch (e) {
       print("Error While Authenticaion: $e");
@@ -119,6 +115,11 @@ class _OtpVerificationState extends State<OtpVerification> {
                   controller: otpController,
                   pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
                   showCursor: true,
+                  onChanged: (value){
+                    setState(() {
+                      otp=value;
+                    });
+                  },
                 ),
                 SizedBox(
                   height: 20,
@@ -128,13 +129,26 @@ class _OtpVerificationState extends State<OtpVerification> {
                   width: MediaQuery.of(context).size.height / 4,
                   child: ElevatedButton(
                     onPressed: () async {
-                      verify();
+                      if (otp.isEmpty) {
+                        // Display a warning if OTP is empty
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text('Please enter the OTP'),
+                          ),
+                        );
+                      } else {
+                        verify();
+                      }
                     },
-                    child: Text("Verify Mobile Number"),
+                    child: isLoading
+                        ? CircularProgressIndicator()
+                        : Text("Verify Mobile Number"),
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.green.shade900,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10))),
+                      primary: Colors.green.shade900,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -158,8 +172,12 @@ class _OtpVerificationState extends State<OtpVerification> {
       ),
     );
   }
-
   Future<void> verify() async {
+    // Set isLoading to true when verification starts
+    setState(() {
+      isLoading = true;
+    });
+
     PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.credential(
         verificationId: widget.verificationId, smsCode: otpController.text);
     signInWithPhoneAuthCredential(phoneAuthCredential);
